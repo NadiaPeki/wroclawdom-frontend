@@ -1,0 +1,40 @@
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+  }
+  
+  .notFound img {
+    width: 40%;
+    margin-bottom: 20px;
+    border: 2px solid rgb(115, 112, 112);
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .notFound h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .notFound p {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .notFound a {
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #4f9fe1;
+  }
+  
+  .notFound a:hover {
+    text-decoration: underline;
+  }

@@ -29,7 +29,7 @@
       "web-vitals": "^2.1.4"
     },
     "scripts": {
-      "start": "react-scripts start --public-url=/frontend/public",
+      "start": "react-scripts start",
       "server": "nodemon server.js start",
       "build": "react-scripts build",
       "test": "react-scripts test",

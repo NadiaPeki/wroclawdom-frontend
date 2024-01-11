@@ -9,7 +9,7 @@ const Rent = () => {
   useEffect(() => {
     const fetchRentPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/posts');
+        const response = await axios.get('https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts');
         const rentPosts = response.data.filter(post => post.category === 'Wynajem');
         setRentPosts(rentPosts);
         console.log('Посты по категории "Wynajem":', rentPosts);

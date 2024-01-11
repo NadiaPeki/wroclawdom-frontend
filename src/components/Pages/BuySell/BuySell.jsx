@@ -9,7 +9,7 @@ const BuySell = () => {
   useEffect(() => {
     const fetchBuySellPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/posts');
+        const response = await axios.get('https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts');
         const buySellPosts = response.data.filter(post => post.category === 'Zakup i Sprzedaż');
         setBuySellPosts(buySellPosts);
         console.log('Посты по категории "Zakup i Sprzedaż":', buySellPosts);

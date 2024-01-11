@@ -9,7 +9,7 @@ const Architecture = () => {
   useEffect(() => {
     const fetchArchitecturePosts = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/posts');
+        const response = await axios.get('https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts');
         const architecturePosts = response.data.filter(post => post.category === 'Design i Architektura');
         setArchitecturePosts(architecturePosts);
         console.log('Посты по категории "Design i Architektura":', architecturePosts);

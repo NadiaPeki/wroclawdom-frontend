@@ -45,7 +45,7 @@ const FullPost = () => {
   }
 
   const { imageUrl, title, text, date, category } = selectedPost;
-  const postUrl = `http://localhost:3000/posts/${slug}`;
+  const postUrl = `https://wroclawdom-frontend.vercel.app/posts/${slug}`;
 
   const formattedText = text.split('\n').map((paragraph, index) => (
     // Используем dangerouslySetInnerHTML для выделения нужных частей текста

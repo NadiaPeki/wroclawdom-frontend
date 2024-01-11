@@ -13,7 +13,7 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/posts');
+        const response = await axios.get('https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts');
         setAllPosts(response.data);
       } catch (error) {
         console.error('Ошибка при получении постов:', error);

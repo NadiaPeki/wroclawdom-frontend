@@ -19,7 +19,7 @@ const FullPost = () => {
           return;
         }
 
-        const response = await axios.get(`https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts${slug}`);
+        const response = await axios.get(`https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts/${slug}`);
 
         if (response.data) {
           const matchingPost = response.data;

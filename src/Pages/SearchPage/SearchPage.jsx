@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Input from '../../Input/Input';
-import FilteredPosts from '../../FilteredPosts/FilteredPosts';
+import Input from '../../components/Input/Input';
+import FilteredPosts from '../../components/FilteredPosts/FilteredPosts';
 import styles from './SearchPage.module.css';
-import HeaderPosts from '../../HeaderPosts/HeaderPosts';
+import HeaderPosts from '../../components/HeaderPosts/HeaderPosts';
 
 const SearchPage = () => {
   const [allPosts, setAllPosts] = useState([]);

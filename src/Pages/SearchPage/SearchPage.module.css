@@ -5,11 +5,12 @@
     align-items: center;
     margin: 0 auto; 
     padding-top: 100px;
-    min-height: 100vh;
+    min-height: 80vh;
+
   }
 
 .resultsContainer {
-  padding-top: 50px;
+  padding-top: 30px;
   flex: 1;
 }     
 
@@ -29,7 +30,11 @@
   .maybeText {
     color: black;
     font-size: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
+  }
+
+  .headerPostsContainer {
+    margin-top: -100px;
   }
 
   @media only screen and (max-width: 1200px) {
@@ -44,26 +49,35 @@
     }
     .resultsContainer {
       padding-top: 20px;
-    }     
+    }   
+    .headerPostsContainer {
+      margin-top: -80px;
+         }  
   }
   
 
  @media only screen and (max-width: 750px) {
   .searchPage {
       padding-top: 150px;
-  }
-  .resultsContainer {
-    padding-top: 0px;
-  }  
-  .noResultsText {
-    padding-top: 20px;
+   }    
+   .headerPostsContainer {
+      margin-top: -150px;
+      width: 80%;
    }
+  }
+  @media only screen and (max-width: 600px) {
+  .headerPostsContainer {
+    width: 70%;
+    font-size: 16px;
+  }
    }
 
-  @media only screen and (max-width: 600px) {
-  .maybeText {
-    display: none;
-   }
-   }
+   @media only screen and (max-width: 480px) {
+    .headerPostsContainer {
+      width: 60%;
+      font-size: 14px;
+    }
+
+     }
   
   

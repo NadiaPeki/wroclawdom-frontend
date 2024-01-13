@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Home from './components/Pages/Home/Home'
-import Rent from './components/Pages/Rent/Rent'
-import BuySell from './components/Pages/BuySell/BuySell'
-import Architecture from './components/Pages/Architecture/Architecture'
-import NotFound from './components/Pages/NotFound/NotFound';
+import Home from './Pages/Home/Home'
+import Rent from './Pages/Rent/Rent'
+import BuySell from './Pages/BuySell/BuySell'
+import Architecture from './Pages/Architecture/Architecture'
+import NotFound from './Pages/NotFound/NotFound';
 import MainLayout from './layouts/MainLayout'
 import FullPost from './components/FullPost/FullPost'
-import SearchPage from './components/Pages/SearchPage/SearchPage'
+import SearchPage from './Pages/SearchPage/SearchPage'
 
 
 

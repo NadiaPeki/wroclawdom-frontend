@@ -8,11 +8,12 @@ const Footer = () => {
         <div className={styles.contacts}>
         <p>Skontaktuj się z nami:<br /></p>
         <div className={styles.footerLinks}>
-        <Link to="mailto:your-email@example.com"><img src='/img/icons/emailIcon.png' alt='email' width={40} height={40}/></Link>
+        <Link to="mailto:wroclawdompl@mail.com"><img src='/img/icons/emailIcon.png' alt='email' width={40} height={40}/></Link>
         </div>
         </div>
         <div className={styles.details}>
         <p>© Wroclaw Dom - twój przewodnik w świecie nieruchomości {new Date().getFullYear()}</p>
+        <p>Stworzony przez Nadia.P.Company</p>
         </div>
       </div>
     </footer>

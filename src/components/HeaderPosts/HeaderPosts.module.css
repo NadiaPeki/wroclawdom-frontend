@@ -4,6 +4,7 @@
   overflow: hidden;
 }
 
+
 .headerPosts {
   display: flex;
   flex-direction: row;
@@ -20,21 +21,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .headerPosts {
-   display: none;
-  }
   .wrapper {
    overflow: hidden;
    margin-bottom: 60px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .headerPosts {
-   display: none;
-  }
-  .wrapper {
-   overflow: hidden;
-   margin-bottom: 40px;
-  }
-}

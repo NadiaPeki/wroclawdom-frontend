@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Posts from "../../Posts/Posts";
-import HeaderPosts from "../../HeaderPosts/HeaderPosts"; 
+import Posts from '../../components/Posts/Posts';
+import HeaderPosts from '../../components/HeaderPosts/HeaderPosts'; 
 import styles from './Home.module.css'
 
 const Home = () => {
@@ -22,7 +22,9 @@ const Home = () => {
 
   return (
     <div className={styles.wrapper}>
+      <div className={styles.headerPosts}>
       <HeaderPosts allPosts={allPosts} />
+      </div>
       <Posts className={styles.homePosts} />
     </div>
   );

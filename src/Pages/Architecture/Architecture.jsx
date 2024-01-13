@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Post from '../../Post/Post';
+import Post from '../../components/Post/Post'
 import styles from './Architecture.module.css'
 
 const Architecture = () => {

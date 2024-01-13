@@ -163,8 +163,8 @@
   }
 
   .smallSize img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   }
 
   .smallSize h1 {
@@ -198,6 +198,21 @@
   .postImage {
     width: 100%;
   }
+
+  .smallSize {
+    margin-top: 52px;
+    height: auto;
+    overflow: hidden;
+    }
+  
+    .smallSize img {
+    width: 65px;
+    height: 65px;
+    }
+  
+    .smallSize h1 {
+    font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -219,5 +234,14 @@
   .postImage {
     width: 100%;
   }
+
+  .smallSize img {
+    width: 55px;
+    height: 55px;
+    }
+  
+    .smallSize h1 {
+    font-size: 12px;
+    }
 }
 

@@ -19,6 +19,13 @@
 @media only screen and (max-width: 480px) {
 .wrapper {
  max-width: 90%;
+ padding-top: 150px;
+}
+}
 
-}
-}
+@media only screen and (max-width: 410px) {
+  .wrapper {
+   padding-top: 130px;
+  }
+  }
+  

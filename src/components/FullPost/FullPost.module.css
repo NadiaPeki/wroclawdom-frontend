@@ -13,14 +13,14 @@
 }
 
 .fullPostContent p {
-  max-width: 90%;
+  width: 90%;
   color: black;
   font-size: 24px;
   margin-top: 25px;
 }
 
 .fullPostContent h1 {
-  max-width: 90%;
+  width: 90%;
   color: black;
   font-size: 32px;
   margin-bottom: 20px;
@@ -58,7 +58,7 @@
   color: black;
 }
 .fullPostContent img {
-  max-width: 100%; 
+  width: 100%; 
   height: auto;    
 }
 
@@ -67,7 +67,7 @@
     padding-top: 50px;
   }
   .fullPostContent img {
-    max-width: 100%; 
+    width: 100%; 
     height: auto;    
   }
 }
@@ -83,7 +83,7 @@
   .fullPostContent p{
     font-size: 22px;
     margin-top: 15px;
-    max-width: 100%;
+    width: 100%;
   }
   
   .fullPostContent h1 {
@@ -108,13 +108,13 @@
   .fullPostContent p {
     font-size: 20px;
     margin-top: 10px;
-    max-width: 100%;
+    width: 100%;
   }
   
   .fullPostContent h1 {
     font-size: 24px;
     margin-bottom: 10px;
-    max-width: 100%;
+    width: 100%;
   }
   
   .fullPostContent h2 {

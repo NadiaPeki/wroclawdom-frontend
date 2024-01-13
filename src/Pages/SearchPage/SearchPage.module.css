@@ -5,8 +5,7 @@
     align-items: center;
     margin: 0 auto; 
     padding-top: 100px;
-    min-height: 80vh;
-
+    min-height: 100vh;
   }
 
 .resultsContainer {
@@ -67,17 +66,18 @@
   }
   @media only screen and (max-width: 600px) {
   .headerPostsContainer {
-    width: 70%;
-    font-size: 16px;
+    display: none;
   }
+  .maybeText {
+    display: none;
+  }
+  .noResultsText {
+    padding-top: 30px;
+  }
+  .resultsContainer {
+    padding-top: 0px;
+  }   
    }
 
-   @media only screen and (max-width: 480px) {
-    .headerPostsContainer {
-      width: 60%;
-      font-size: 14px;
-    }
-
-     }
-  
+   
   

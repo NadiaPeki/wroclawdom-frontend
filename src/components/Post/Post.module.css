@@ -163,8 +163,8 @@
   }
 
   .smallSize img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   }
 
   .smallSize h1 {
@@ -198,32 +198,17 @@
   .postImage {
     width: 100%;
   }
-
-  .smallSize {
-    margin-top: 52px;
-    height: auto;
-    overflow: hidden;
-    }
-  
-    .smallSize img {
-    width: 65px;
-    height: 65px;
-    }
-  
-    .smallSize h1 {
-    font-size: 12px;
-    }
 }
 
 @media only screen and (max-width: 480px) {
   .post p {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
     width: 100%;
   }
   
   .post h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
     width: 100%;
   }
@@ -234,14 +219,5 @@
   .postImage {
     width: 100%;
   }
-
-  .smallSize img {
-    width: 55px;
-    height: 55px;
-    }
-  
-    .smallSize h1 {
-    font-size: 12px;
-    }
 }
 

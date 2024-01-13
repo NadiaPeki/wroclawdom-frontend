@@ -19,11 +19,11 @@ function App() {
     
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path="rent" element={<Rent />} />
-        <Route path="buysell" element={<BuySell />} />
-        <Route path="architecture" element={<Architecture />} />
+        <Route path="wynajem" element={<Rent />} />
+        <Route path="zakupisprzedaz" element={<BuySell />} />
+        <Route path="designiarchitektura" element={<Architecture />} />
         <Route path="/posts/:slug" element={<FullPost />} />
-        <Route path="/search" element={<SearchPage />} />
+        <Route path="/szukaj" element={<SearchPage />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

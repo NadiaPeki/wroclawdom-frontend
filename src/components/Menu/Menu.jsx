@@ -16,17 +16,17 @@ import styles from './Menu.module.css'
         >
           Główna
         </NavLink>
-        <NavLink to="buysell" className={styles.menuLink}>
+        <NavLink to="zakupisprzedaz" className={styles.menuLink}>
         Zakup i Sprzedaż
         </NavLink>
-        <NavLink to="rent" className={styles.menuLink}>
+        <NavLink to="wynajem" className={styles.menuLink}>
         Wynajem
         </NavLink>
-        <NavLink to="architecture" className={styles.menuLink}>
+        <NavLink to="designiarchitektura" className={styles.menuLink}>
         Design i Architektura
         </NavLink>
-        <NavLink to="search" className={styles.menuLink}>
-        Search
+        <NavLink to="szukaj" className={styles.menuLink}>
+        Szukaj
         </NavLink>
       </div>
      

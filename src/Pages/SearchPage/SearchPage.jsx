@@ -13,7 +13,7 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts');
+        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/posts');
         setAllPosts(response.data);
       } catch (error) {
         console.error('Ошибка при получении постов:', error);
@@ -52,13 +52,13 @@ const SearchPage = () => {
       <Input onSearch={handleSearch} />
       <div className={styles.resultsContainer}>
         {searchText.trim() !== '' && searchResults.length === 0 && (
-          <div className={styles.noResults}><p className={styles.noResultsText}>Brak wyników</p>
-          <p className={styles.maybeText}>Być może te posty cię zainteresują
-</p>
-<div className={styles.headerPostsContainer}>
-<HeaderPosts allPosts={allPosts} />
-</div>
-</div>
+          <div className={styles.noResults}>
+            <p className={styles.noResultsText}>Brak wyników</p>
+            <p className={styles.maybeText}>Być może te posty cię zainteresują</p>
+            <div className={styles.headerPostsContainer}>
+              <HeaderPosts allPosts={allPosts} />
+            </div>
+          </div>
         )}
         {searchResults.length > 0 && (
           <FilteredPosts allPosts={searchResults} searchText={searchText} />

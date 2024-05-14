@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Post from '../../components/Post/Post';
-import styles from './BuySell.module.css'
+import styles from './BuySell.module.css';
 
 const BuySell = () => {
   const [buySellPosts, setBuySellPosts] = useState([]);
@@ -9,8 +9,8 @@ const BuySell = () => {
   useEffect(() => {
     const fetchBuySellPosts = async () => {
       try {
-        const response = await axios.get('https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts');
-        const buySellPosts = response.data.filter(post => post.category === 'Zakup i Sprzedaż');
+        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/posts');
+        const buySellPosts = response.data.filter((post) => post.category === 'Zakup i Sprzedaż');
         setBuySellPosts(buySellPosts);
         console.log('Посты по категории "Zakup i Sprzedaż":', buySellPosts);
       } catch (error) {
@@ -24,7 +24,7 @@ const BuySell = () => {
   return (
     <div className={styles.wrapper}>
       <div>
-        {buySellPosts.map(post => (
+        {buySellPosts.map((post) => (
           <Post key={post._id} post={post} />
         ))}
       </div>

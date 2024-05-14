@@ -19,7 +19,9 @@ const FullPost = () => {
           return;
         }
 
-        const response = await axios.get(`https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts/${slug}`);
+        const response = await axios.get(
+          `https://wroclawdom-backend-j6nf.vercel.app/posts/${slug}`,
+        );
 
         if (response.data) {
           const matchingPost = response.data;
@@ -63,11 +65,19 @@ const FullPost = () => {
         )}
         <div className={styles.fullText}>{formattedText}</div>
         <div className={styles.shareButtons}>
-                   <WhatsappShareButton url={postUrl}>
-            <SocialIcon url='https://web.whatsapp.com/' title={`Share this post by What's App`} className={styles.shareButton} />
+          <WhatsappShareButton url={postUrl}>
+            <SocialIcon
+              url="https://web.whatsapp.com/"
+              title={`Share this post by What's App`}
+              className={styles.shareButton}
+            />
           </WhatsappShareButton>
           <TelegramShareButton url={postUrl}>
-            <SocialIcon url='https://web.telegram.org/' title={`Share this post by Telegram`} className={styles.shareButton} />
+            <SocialIcon
+              url="https://web.telegram.org/"
+              title={`Share this post by Telegram`}
+              className={styles.shareButton}
+            />
           </TelegramShareButton>
         </div>
       </div>

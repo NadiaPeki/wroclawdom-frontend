@@ -10,7 +10,7 @@ const Posts = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://wroclawdom-backend-b0a3204cd4c1.herokuapp.com/posts');
+        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/posts');
         setAllPosts(response.data);
       } catch (error) {
         console.error('Ошибка при получении постов:', error);
@@ -21,7 +21,7 @@ const Posts = () => {
   }, []);
 
   const loadMorePosts = () => {
-    setVisiblePosts(prevVisiblePosts => prevVisiblePosts + 6);
+    setVisiblePosts((prevVisiblePosts) => prevVisiblePosts + 6);
   };
 
   return (
@@ -32,7 +32,9 @@ const Posts = () => {
         ))}
       </div>
       {visiblePosts < allPosts.length && (
-        <button className={styles.loadMoreButton} onClick={loadMorePosts}>Załaduj więcej</button>
+        <button className={styles.loadMoreButton} onClick={loadMorePosts}>
+          Załaduj więcej
+        </button>
       )}
     </div>
   );

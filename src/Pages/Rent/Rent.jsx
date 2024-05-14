@@ -9,7 +9,7 @@ const Rent = () => {
   useEffect(() => {
     const fetchRentPosts = async () => {
       try {
-        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/posts');
+        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/api/posts');
         const rentPosts = response.data.filter((post) => post.category === 'Wynajem');
         setRentPosts(rentPosts);
         console.log('Посты по категории "Wynajem":', rentPosts);

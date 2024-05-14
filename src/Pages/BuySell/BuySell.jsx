@@ -9,7 +9,7 @@ const BuySell = () => {
   useEffect(() => {
     const fetchBuySellPosts = async () => {
       try {
-        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/posts');
+        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/api/posts');
         const buySellPosts = response.data.filter((post) => post.category === 'Zakup i Sprzedaż');
         setBuySellPosts(buySellPosts);
         console.log('Посты по категории "Zakup i Sprzedaż":', buySellPosts);

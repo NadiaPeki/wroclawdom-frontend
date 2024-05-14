@@ -20,7 +20,7 @@ const FullPost = () => {
         }
 
         const response = await axios.get(
-          `https://wroclawdom-backend-j6nf.vercel.app/posts/${slug}`,
+          `https://wroclawdom-backend-j6nf.vercel.app/api/posts/${slug}`,
         );
 
         if (response.data) {

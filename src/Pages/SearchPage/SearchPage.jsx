@@ -13,7 +13,7 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/posts');
+        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/api/posts');
         setAllPosts(response.data);
       } catch (error) {
         console.error('Ошибка при получении постов:', error);

@@ -9,7 +9,7 @@ const Architecture = () => {
   useEffect(() => {
     const fetchArchitecturePosts = async () => {
       try {
-        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/posts');
+        const response = await axios.get('https://wroclawdom-backend-j6nf.vercel.app/api/posts');
         const architecturePosts = response.data.filter(post => post.category === 'Design i Architektura');
         setArchitecturePosts(architecturePosts);
         console.log('Посты по категории "Design i Architektura":', architecturePosts);
